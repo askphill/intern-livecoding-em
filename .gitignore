@@ -1,0 +1,23 @@
+#Dependencies
+node_modules
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build output
+dist
+dist-ssr
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Cache directories
+.npm
+.eslintcache
+.stylelintcache
+.parcel-cache
