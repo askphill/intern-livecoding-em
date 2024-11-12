@@ -2,6 +2,7 @@
   "name": "intern-livecoding-em",
   "version": "1.0.0",
   "description": "Live coding challenge for interns trying out at Ask Phill",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -18,8 +19,10 @@
   },
   "homepage": "https://github.com/askphill/intern-livecoding-em#readme",
   "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.5",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.49",
+    "postcss-import": "^16.1.0",
     "tailwindcss": "^3.4.14",
     "vite": "^5.4.11"
   }
