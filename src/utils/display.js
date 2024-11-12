@@ -18,27 +18,38 @@ export default (listOfProductsToDisplay) => {
     const template = document.querySelector("#productTemplate");
     const productCard = template.content.cloneNode(true);
 
-    // Card title & price
+    // Title & price
     const titleElement = productCard.querySelector("h3");
     titleElement.textContent = product.title;
 
     const priceElement = productCard.querySelector(".price");
     priceElement.textContent = `€${product.price.amount.toFixed(2)}`;
 
-    // Card image
+    // Image
     const imageElement = productCard.querySelector("img");
     if (imageElement) {
       imageElement.src = product.image;
       imageElement.alt = `${product.title} image`;
     }
 
-    // Card colors
+    /* 
+        TODO: Add the necessary JavaScript below.
+        1. Retrieve the colors list element from the product card.
+        2. Clear the colors list element by setting its innerHTML to an empty string because we will be adding new items.
+        3. For each product variant:
+            - Create a list item.
+            - Create a span for the color swatch. 
+                - Make it circular and set the background color to the variant's hex value. 
+                - Add a border around the swatch for better visibility.
+            - Create a span for the color name. 
+        3. Append the swatch and name to the list item.
+        4. Append the list item to the colors list.
+    */
+
+    // solution example!!!!
     const colorsList = productCard.querySelector(".colors-list");
     colorsList.innerHTML = "";
-    /* 
-    TODO: Add the list of colors to product card using the variants found in the product object. Each variant should be displayed as a list item with a color swatch (hex) and the color name (color). Style the color swatch with a background color using the hex value. 
-    */
-   // This for loop below below will be the challenge for them to solve. Also up to them to style properly
+
     product.variants.forEach((variant) => {
       const colorItem = document.createElement("li");
       colorItem.classList.add("flex", "items-center");
