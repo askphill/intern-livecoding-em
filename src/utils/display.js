@@ -46,7 +46,7 @@ export default (listOfProductsToDisplay) => {
         4. Append the list item to the colors list.
     */
 
-    // solution example!!!!
+    // solution example... will be removed before the final commit!!!
     const colorsList = productCard.querySelector(".colors-list");
     colorsList.innerHTML = "";
 
