@@ -32,12 +32,13 @@ export default (listOfProductsToDisplay) => {
       imageElement.alt = `${product.title} image`;
     }
 
+    // Card colors
     const colorsList = productCard.querySelector(".colors-list");
     colorsList.innerHTML = "";
-
     /* 
     TODO: Add the list of colors to product card using the variants found in the product object. Each variant should be displayed as a list item with a color swatch (hex) and the color name (color). Style the color swatch with a background color using the hex value. 
     */
+   // This for loop below below will be the challenge for them to solve. Also up to them to style properly
     product.variants.forEach((variant) => {
       const colorItem = document.createElement("li");
       colorItem.classList.add("flex", "items-center");
