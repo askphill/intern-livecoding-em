@@ -56,7 +56,8 @@ In this challenge, you’ll complete a few `TODO` sections marked in the code.
 1. **Event Listener for Sorting**
 
    - **File:** `src/main.js`
-   - **Task:** In the `initialize` function, there’s a `TODO` comment where you need to include an event listener for the sorting functionality. This listener should call `handleSort` when the `#sortSelect` dropdown is changed, allowing the user to sort products by price.
+   - **Task:** In the `initialize` function, there’s a `TODO` comment where you need to include an event listener for the sorting functionality. 
+     - This listener should call `handleSort` when the `#sortSelect` dropdown is changed, allowing the user to sort products by price.
    - **Expected Outcome:** Products should re-render in ascending or descending order when the user selects a sorting option.
 
 2. **Footer Styling**
@@ -68,5 +69,8 @@ In this challenge, you’ll complete a few `TODO` sections marked in the code.
 
 - Keep your code clean and use clear variable names.
 - Test the sorting and display functionality thoroughly so that the products render as expected.
+- Don't worry about completing the entire task within the time limit, focus on demonstrating your problem-solving skills and communication abilities. We rather see a small amount of good code than a big amount of bad code 😃
+- Please walk us through the steps you are taking and your thinking process.
+- If you are stuck or confused, do not hesitate to ask questions!
 
 ### 🎉🎉 Happy Coding 🎉🎉
