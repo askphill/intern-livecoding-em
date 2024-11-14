@@ -62,8 +62,13 @@ In this challenge, you’ll complete a few `TODO` sections marked in the code.
 
 2. **Footer Styling**
    - **File:** `index.html`
-   - **Task:** In the footer section, there’s a `TODO` comment directing you to style the footer. Use either Tailwind CSS or standard CSS to create a clean and organized layout for the footer content, which includes navigation links, regional details, and contact information.
-   - **Expected Outcome:** The footer should have a polished look with clear visual hierarchy and proper spacing. Keep it as close to the design as possible.
+   - **Task:** In the footer section, there’s a TODO comment directing you to style the footer. There is already content. You should try and re-create the layout to look like the one on our [own website](https://askphill.com/).
+     - You can use either standard CSS or Tailwind CSS.
+     - If you opt for standard CSS, add your css to `src/main.css`.
+     - For Tailwind, add the classes directly on the elements.
+   - **Expected Outcome:** The footer should have a polished look with clear visual hierarchy and proper spacing. 
+     -  Multi-column setup for the footer Navigation Links, Region/Time, and Address.
+     -  Don’t worry about the font style but show font size differences.
 
 ## 💡 Tips
 
