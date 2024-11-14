@@ -64,9 +64,34 @@
       </p>
     </main>
 
-    <footer class="bg-gray-100 mt-auto py-4">
-      <div class="container mx-auto px-4 text-center text-gray-600">
-        <p>&copy; Ask Phill Challenge</p>
+    <footer class="bg-black text-white mt-auto py-4">
+      <div class="container mx-auto text-center px-4">
+        <!-- TODO: style this part of the footer as described in the Notion document.  -->
+        <nav class="" role="navigation">
+          <ul>
+            <li><a href="#">Our work</a></li>
+            <li><a href="#">Expertise</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Strategy</a></li>
+            <li><a href="#">Creative</a></li>
+            <li><a href="#">Technology</a></li>
+          </ul>
+        </nav>
+        <div role="region">
+          <p>Amsterdam</p>
+          <time datetime="00:00">00:00</time>
+        </div>
+        <div role="region">
+          <p>'s-Gravenhekje</p>
+          <p>1011 TG Amsterdam</p>
+          <p>The Netherlands</p>
+          <p>+31 20 261 5080</p>
+        </div>
       </div>
     </footer>
 
@@ -93,10 +118,7 @@
           <h4 class="text-sm font-medium text-gray-500 mb-2">
             Available Colors:
           </h4>
-          <!-- TODO: Use this list element to display available colors -->
-          <ul class="colors-list flex space-x-3" role="list">
-            <!-- TODO: Colors should be inserted here as list items -->
-          </ul>
+          <ul id="colors-list" class="flex space-x-3" role="list"></ul>
         </div>
       </article>
     </template>

@@ -53,16 +53,16 @@ In this challenge, you’ll complete a few "TODO" sections marked in the code. T
 
 ### Assignment Details
 
-1. **Event Listener for Sorting**
+1. **Event Listener for Sorting** 
 
    - **File:** `src/main.js`
    - **Task:** In the `initialize` function, there’s a `TODO` comment where you need to include an event listener for the sorting functionality. This listener should call `handleSort` when the `#sortSelect` dropdown is changed, allowing the user to sort products by price.
    - **Expected Outcome:** Products should re-render in ascending or descending order when the user selects a sorting option.
 
-2. **Product Display Rendering**
-   - **File:** `src/utils/display.js`
-   - **Task:** In the `displayProducts` function, you’ll see a `TODO` comment asking you to list available colors to each product card. Render color swatches and color names for each product.
-   - **Expected Outcome:** Each product should display its title, price, image, and <u>**available colors**</u>.
+2. **Footer Styling**
+   - **File:** `index.js`
+   - **Task:** In the footer section, there’s a `TODO` comment directing you to style the footer. Use either Tailwind CSS or standard CSS to create a clean and organized layout for the footer content, which includes navigation links, regional details, and contact information.
+   - **Expected Outcome:** The footer should have a polished look with clear visual hierarchy and proper spacing. Keep it as close to the design as possible.
 
 ## 💡 Tips
 

@@ -6,10 +6,14 @@ const initialize = () => {
   const sortSelectElement = document.querySelector("#sortSelect");
 
   // TODO: Include an event listener that will listen for changes in sortSelectElement. It needs to be able to handle the sorting products by price.
-  // this next line will be removed before the final commit
-  sortSelectElement.addEventListener("change", handleSort);
+  // add your code here...
 
   displayProducts(products);
 };
 
 document.addEventListener("DOMContentLoaded", initialize);
+
+
+
+
+

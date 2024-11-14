@@ -32,22 +32,8 @@ export default (listOfProductsToDisplay) => {
       imageElement.alt = `${product.title} image`;
     }
 
-    /* 
-        TODO: Add the necessary JavaScript below.
-        1. Retrieve the colors list element from the product card.
-        2. Clear the colors list element by setting its innerHTML to an empty string because we will be adding new items.
-        3. For each product variant:
-            - Create a list item.
-            - Create a span for the color swatch. 
-                - Make it circular and set the background color to the variant's hex value. 
-                - Add a border around the swatch for better visibility.
-            - Create a span for the color name. 
-        3. Append the swatch and name to the list item.
-        4. Append the list item to the colors list.
-    */
-
-    // solution example... will be removed before the final commit!!!
-    const colorsList = productCard.querySelector(".colors-list");
+    // Colors
+    const colorsList = productCard.querySelector("#colors-list");
     colorsList.innerHTML = "";
 
     product.variants.forEach((variant) => {
