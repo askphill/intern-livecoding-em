@@ -1,0 +1,15 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+  html {
+    font-family: Inter, sans-serif;
+    min-height: 100%;
+  }
+
+  body {
+    min-height: 100%;
+    --scrollbar-width: 0px;
+  }
+}

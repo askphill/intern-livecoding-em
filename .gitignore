@@ -1,0 +1,20 @@
+#Dependencies
+node_modules
+
+# Build output
+dist
+dist-ssr
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Cache directories
+.npm
+.eslintcache
+.stylelintcache
+.parcel-cache

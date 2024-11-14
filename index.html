@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Product collection page showing a list of items"
+    />
+    <title>Product Collection</title>
+    <link
+      rel="preload"
+      href="./src/main.js"
+      as="script"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./src/main.css" />
+  </head>
+  <body class="bg-gray-50 flex flex-col h-screen">
+    <header class="bg-white shadow-sm py-4">
+      <div class="container mx-auto px-4">
+        <h1 class="text-2xl font-bold">Product Collection</h1>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+      <!-- Sorting Controls -->
+      <section aria-labelledby="sort-heading" class="mb-6">
+        <h2 id="sort-heading" class="sr-only">Sort Products</h2>
+        <label
+          for="sortSelect"
+          class="block text-sm font-medium text-gray-700 mb-2"
+        >
+          Sort products by:
+        </label>
+        <select
+          id="sortSelect"
+          class="p-2 border rounded shadow-sm"
+          aria-label="Sort products by price"
+        >
+          <option value="default">Sort by...</option>
+          <option value="priceAsc">Price: Low to High</option>
+          <option value="priceDesc">Price: High to Low</option>
+        </select>
+      </section>
+
+      <!-- Product Grid -->
+      <section aria-label="Products" class="mb-8">
+        <div
+          id="productGrid"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          role="list"
+        >
+          <!-- Products will be rendered here -->
+          <div class="text-center p-4" id="loadingMessage" role="status">
+            <p>Loading products...</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- No Results Message (hidden by default) -->
+      <p id="noResults" class="text-center hidden" role="alert">
+        No products found!
+      </p>
+    </main>
+
+    <footer class="bg-black text-white mt-auto py-4">
+      <div class="container mx-auto text-center px-4">
+        <!-- TODO: style this part of the footer as described in the Notion document.  -->
+        <nav class="" role="navigation">
+          <ul>
+            <li><a href="#">Our work</a></li>
+            <li><a href="#">Expertise</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Strategy</a></li>
+            <li><a href="#">Creative</a></li>
+            <li><a href="#">Technology</a></li>
+          </ul>
+        </nav>
+        <div role="region">
+          <p>Amsterdam</p>
+          <time datetime="00:00">00:00</time>
+        </div>
+        <div role="region">
+          <p>'s-Gravenhekje</p>
+          <p>1011 TG Amsterdam</p>
+          <p>The Netherlands</p>
+          <p>+31 20 261 5080</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Product Card Template   -->
+    <template id="productTemplate">
+      <article
+        class="bg-white border border-gray-200 p-6 rounded-lg shadow-lg transition-all hover:shadow-xl transform hover:-translate-y-1 cursor-pointer"
+        role="listitem"
+      >
+        <div class="overflow-hidden rounded-lg mb-4">
+          <img
+            src=""
+            alt=""
+            class="w-full h-48 object-contain transition-transform duration-300 hover:scale-105"
+          />
+        </div>
+        <h3
+          class="text-lg font-semibold text-gray-900 mb-1 tracking-wide leading-snug"
+        ></h3>
+        <p class="text-gray-700 text-base font-medium mb-4">
+          <span class="price text-gray-900 font-semibold"></span>
+        </p>
+        <div class="mt-3">
+          <h4 class="text-sm font-medium text-gray-500 mb-2">
+            Available Colors:
+          </h4>
+          <ul id="colors-list" class="flex space-x-3" role="list"></ul>
+        </div>
+      </article>
+    </template>
+
+    <!-- js file -->
+    <script type="module" src="./src/main.js" crossorigin="anonymous"></script>
+
+    <!-- no-script fallback -->
+    <noscript>
+      <div class="container mx-auto px-4 py-8 text-center">
+        <p>
+          JavaScript is required to view this page. Please enable JavaScript in
+          your browser settings.
+        </p>
+      </div>
+    </noscript>
+  </body>
+</html>
