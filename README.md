@@ -21,32 +21,6 @@ intern-livecoding-em/
 └── README.md               # Project README file
 ```
 
-## 🛠️ Getting Started
-
-To get set up with the project, follow these steps:
-
-1. **Clone the Repository**
-
-   ```bash
-   git clone https://github.com/askphill/intern-livecoding-em.git
-   ```
-
-2. **Install Dependencies**
-
-   ```bash
-   npm install
-   ```
-
-3. **Start the Development Server**
-
-   ```bash
-   npm run dev
-   ```
-
-4. **View in Browser**
-
-   Navigate to `https://localhost:5173/` in your browser to see the project in action. Hot module reloading is enabled, so any changes you make will automatically update in the browser.
-
 ## 🚀 Task Overview
 
 In this challenge, you’ll complete a few `TODO` sections marked in the code.
